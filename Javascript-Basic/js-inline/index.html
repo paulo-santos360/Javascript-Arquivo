@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS - Basic</title>
+  </head>
+  <body>
+    <h1>Hello Word</h1>
+    <h2>Hello People</h2><!-- btn.btn*7{random buton} comando para fazer copia junto com a palavra do button -->
+    <button class="btn">random buton</button
+    ><button class="btn">random buton</button
+    ><button class="btn">random buton</button
+    ><button class="btn">random buton</button
+    ><button class="btn">random buton</button
+    ><button class="btn">random buton</button
+    ><button class="btn">random buton</button>
+<!--     <button onclick="alert('hello word')">click me</button> js inline
+ --> 
+    <script>
+        document.querySelectorAll('.btn').forEach((item)=>{
+            item.addEventListener('click', () => {
+                alert('ola joão')
+            })
+        }) 
+    
+    </script>
+</body>
+</html>

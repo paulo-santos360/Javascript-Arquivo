@@ -1,0 +1,23 @@
+.container {
+    position: relative;
+    border: 1px solid #000;
+    overflow: hidden;
+    width: 300px;
+    margin: 100px;
+  }
+  .container img {
+    max-width: 100%;
+    min-height: 300px;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .container:hover img {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  .area{
+    display: flex;
+  }

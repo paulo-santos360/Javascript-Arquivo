@@ -1,0 +1,148 @@
+.slider-container {
+  width: 80%;
+  height: 40%;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-top: 64px;
+}
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center; 
+  transition: all 0.25s ease-in-out;
+  text-align: center;
+}
+.slide-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.person-img {
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+.slide:nth-child(1) h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-container {
+  position: relative;
+  top: -38px;
+  display: flex;
+  justify-content: center;
+} 
+
+.btn-container .prevBtn{
+    position: relative;
+    top: -179px;
+    left: -491px;
+    font-size: 53px;
+    color: #fff;
+    margin: 0 1px;
+    cursor: pointer;
+}
+
+.btn-container .nextBtn{
+    position: relative;
+    top: -157px;
+    left: 49px;
+    font-size: 53px;
+    color: #fff;
+    margin: 0 1px;
+    cursor: pointer;
+}
+
+
+@media (min-width: 900px){
+  .slider-container {
+    height: 65vh;
+  }
+  .btn-container .prevBtn{
+    position: relative;
+    top: -199px;
+    left: -34%;
+    font-size: 53px;
+    color: #fff;
+    margin: 0 1px;
+    cursor: pointer;
+}
+
+.btn-container .nextBtn{
+    position: relative;
+    top: -199px;
+    left: 34%;
+    font-size: 53px;
+    color: #fff;
+    margin: 0 1px;
+    cursor: pointer;
+}
+.slide-img{
+  width: 100%;
+  overflow: hidden;
+}
+}
+
+@media (min-width: 390px) and (max-width: 844px){
+  .slider-container {
+    height: 55vh;
+  }
+  .btn-container .prevBtn{
+    position: relative;
+    top: -154px;
+    left: -34%;
+    font-size: 53px;
+    color: #fff;
+    margin: 0 1px;
+    cursor: pointer;
+}
+
+.btn-container .nextBtn{
+    position: relative;
+    top: -154px;
+    left: 34%;
+    font-size: 53px;
+    color: #fff;
+    margin: 0 1px;
+    cursor: pointer;
+}
+.slide-img{
+  width: 100%;
+  border-radius: 10px;
+}
+}
+
+@media(max-width:390px) {
+  .slider-container {
+    height: 55vh;
+  }
+  .slider-container {
+    height: 45vh;
+  }
+  .btn-container .prevBtn{
+    position: relative;
+    top: -199px;
+    left: -24%;
+    font-size: 53px;
+    color: #fff;
+    margin: 0 1px;
+}
+
+.btn-container .nextBtn{
+    position: relative;
+    top: -199px;
+    left: 24%;
+    font-size: 53px;
+    color: #fff;
+    margin: 0 1px;
+}
+}
