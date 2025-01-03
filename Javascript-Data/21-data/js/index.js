@@ -49,9 +49,6 @@ document.write(' 1 dia tem: ' + milissegundo_por_dia + ' milissegundos')
 document.write('<br/><br/><hr/>')
 document.write('A diferenca de data1 e data2 ' + Math.ceil(milissegundos_entre_data / milissegundo_por_dia))
 
-
-
-
 // 1 dia tem 24 hora, cada hora de 60 minutos, cada minuto tem 60 segundos e cada segundo tem 1000 milissegundo
 //entao quantos milissegundo existem em um dia
 document.write(' 1 dia tem: ' + (1*24*60*1000) + ' milissegundo ')
